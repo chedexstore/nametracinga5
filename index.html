@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KidScribble - Name Tracing Practice Sheet Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ 
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-pencil-alt"></i>
+        <span>KidScribble</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Worksheets</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <h1>Help Your Child Master Handwriting</h1>
+      <p>Create personalized name tracing practice sheets in seconds. Perfect for preschool and kindergarten learning.</p>
+      <a href="#generator" class="hero-button">Create Your Worksheet</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-pencil-ruler"></i>
+        </div>
+        <h3>Personalized Practice</h3>
+        <p>Create custom worksheets with your child's name for meaningful practice.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-sliders-h"></i>
+        </div>
+        <h3>Fully Customizable</h3>
+        <p>Adjust line height and spacing to match your child's writing level.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-print"></i>
+        </div>
+        <h3>Print Ready</h3>
+        <p>Generate and print professional quality worksheets instantly.</p>
+      </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section class="generator-container" id="generator">
+      <h2 class="section-title">Create Your Name Tracing Worksheet</h2>
+      <div class="controls">
+        <div class="control-group">
+          <label for="nameInput">Child's Name</label>
+          <input type="text" id="nameInput" value="Sean" placeholder="Enter a name"/>
+        </div>
+        <div class="control-group">
+          <label for="repetitions">Number of Repetitions</label>
+          <input type="number" id="repetitions" min="1" max="10" value="6"/>
+        </div>
+        <div class="slider-group">
+          <label for="lineHeight">Line Height</label>
+          <div class="slider-container">
+            <input type="range" id="lineHeight" min="25" max="100" value="55"/>
+            <span id="lineHeightDisplay" class="slider-value">55px</span>
+          </div>
+        </div>
+        <div class="slider-group">
+          <label for="letterSpacing">Letter Spacing</label>
+          <div class="slider-container">
+            <input type="range" id="letterSpacing" min="0" max="40" value="0"/>
+            <span id="letterSpacingDisplay" class="slider-value">0px</span>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="generatePrintBtn"><i class="fas fa-print"></i> Generate & Print Worksheet</button>
+      </div>
+
+      <div class="preview-header">Preview</div>
+      <div id="preview">
+        <div class="page-container">
+          <div class="page" id="page"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="testimonial-container">
+      <h2 class="section-title">What Parents Are Saying</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p class="testimonial-text">"My daughter loves practicing her name with these worksheets. They've helped her handwriting improve so much in just a few weeks!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div class="author-info">
+              <h4>Jessica Morgan</h4>
+              <p>Parent of a 5-year-old</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"As a kindergarten teacher, I use KidScribble to create custom practice sheets for my students. It's so easy to use and the kids love it!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RB</div>
+            <div class="author-info">
+              <h4>Robert Bennet</h4>
+              <p>Kindergarten Teacher</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"The ability to adjust line height and spacing has been perfect for my son who has fine motor skill challenges. Thank you for this amazing tool!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div class="author-info">
+              <h4>Amanda Peters</h4>
+              <p>Special Needs Parent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>KidScribble</h3>
+        <p>Helping children develop handwriting skills through fun, personalized practice sheets.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Worksheets</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul class="footer-links">
+          <li><a href="#">Handwriting Tips</a></li>
+          <li><a href="#">Teaching Resources</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@kidscribble.com">hello@kidscribble.com</a></li>
+          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KidScribble. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" ></script>
+</body>
+</html>
